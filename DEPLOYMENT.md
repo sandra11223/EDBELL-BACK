@@ -2,10 +2,30 @@
 
 ## 🚨 VERCEL DEPLOYMENT FIX
 
-### Issue: Environment Variable Error
-If you're getting the error: `Environment Variable "MONGODB_URI" references Secret "mongodb-uri", which does not exist.`
+### Issue: Project Name Conflict
+If you're getting the error: `Project "edbell-front-hms7" already exists, please use a new name.`
 
-### Solution: Set Environment Variables in Vercel Dashboard
+### Solution: Use Alternative Project Names
+
+Choose one of these available project names:
+- `edbell-education-website`
+- `edbell-edusolutions-site`
+- `edbell-website-2024`
+- `edbell-official-website`
+- `edbell-education-portal`
+- `edbell-learning-platform`
+- `edbell-edu-solutions`
+- `edbell-website-v2`
+
+### Deployment Steps:
+1. **Go to Vercel Dashboard** → New Project
+2. **Import GitHub Repository**: https://github.com/sandra11223/EDBELL-FRONT.git
+3. **Change Project Name** to one of the suggestions above
+4. **Add Environment Variables** (see below)
+5. **Deploy**
+
+### Environment Variable Error Fix
+If you're getting: `Environment Variable "MONGODB_URI" references Secret "mongodb-uri", which does not exist.`
 
 1. **Go to your Vercel project dashboard**
 2. **Navigate to Settings → Environment Variables**
