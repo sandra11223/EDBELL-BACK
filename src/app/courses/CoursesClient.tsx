@@ -229,7 +229,7 @@ For more information and admission details, contact us today!
             </h1>
             
             <p className="text-xl sm:text-2xl text-gray-600 mb-8 max-w-2xl leading-relaxed">
-              From undergraduate degrees to specialized certifications - find the program that matches your ambitions.
+              Find the program that matches your ambitions.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4">
@@ -261,7 +261,7 @@ For more information and admission details, contact us today!
           <div className="text-center mb-8">
             <h2 className="text-3xl font-black text-white mb-4 transform hover:scale-105 transition-transform duration-300">Choose Your Path</h2>
             <p className="text-blue-100 max-w-2xl mx-auto">
-              Navigate through our expertly curated programs designed for different career trajectories
+              Navigate through our expertly curated programs
             </p>
           </div>
           
@@ -317,16 +317,15 @@ For more information and admission details, contact us today!
                   {selectedCategory === 'all' ? 'All Available Courses' : `${selectedCategory} Programs`}
                 </h2>
                 <p className="text-base text-gray-600 max-w-3xl mx-auto">
-                  Choose from our carefully curated selection of UGC-approved programs designed 
-                  to meet industry demands and career aspirations.
+                  UGC-approved programs for your career goals.
                 </p>
               </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 lg:gap-8">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
                 {filteredCourses.map((course) => (
                   <div 
                     key={course.id} 
-                    className="bg-white rounded-2xl shadow-sm hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 group transform hover:scale-105 hover:-translate-y-2 cursor-pointer min-h-[420px] flex flex-col"
+                    className="bg-white rounded-2xl shadow-sm hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 group transform hover:scale-105 hover:-translate-y-2 cursor-pointer flex flex-col"
                   >
                     {/* Header with Icon and Category */}
                     <div className="p-6 flex-1 flex flex-col">
@@ -348,83 +347,38 @@ For more information and admission details, contact us today!
                         {course.name}
                       </h3>
                       
-                      {/* Course Description */}
-                      <p className="text-gray-600 text-sm leading-relaxed mb-6 line-clamp-3 flex-1">
-                        {course.description}
-                      </p>
-                      
-                      {/* Course Details */}
-                      <div className="space-y-3 mb-6">
-                        <div className="flex items-center justify-between group-hover:translate-x-1 transition-transform duration-300 p-2 rounded-lg hover:bg-gray-50">
+                      {/* Course Details - Simplified */}
+                      <div className="space-y-2 mb-4 flex-1">
+                        <div className="flex items-center justify-between p-2 rounded-lg hover:bg-gray-50">
                           <div className="flex items-center space-x-2 text-gray-500">
-                            <Clock className="h-4 w-4 group-hover:rotate-12 transition-transform duration-300" />
+                            <Clock className="h-4 w-4" />
                             <span className="font-medium text-sm">Duration</span>
                           </div>
                           <span className="font-semibold text-gray-900 text-sm">{course.duration}</span>
                         </div>
                         
-                        <div className="flex items-center justify-between group-hover:translate-x-1 transition-transform duration-300 p-2 rounded-lg hover:bg-gray-50">
+                        <div className="flex items-center justify-between p-2 rounded-lg hover:bg-gray-50">
                           <div className="flex items-center space-x-2 text-gray-500">
-                            <Award className="h-4 w-4 group-hover:rotate-12 transition-transform duration-300" />
+                            <Award className="h-4 w-4" />
                             <span className="font-medium text-sm">Fee</span>
                           </div>
-                          <span className="font-semibold text-blue-600 text-base">
+                          <span className="font-semibold text-blue-600 text-sm">
                             {course.fees || '₹20,000/year'}
                           </span>
-                        </div>
-                        
-                        <div className="flex items-center justify-between group-hover:translate-x-1 transition-transform duration-300 p-2 rounded-lg hover:bg-gray-50">
-                          <div className="flex items-center space-x-2 text-gray-500">
-                            <GraduationCap className="h-4 w-4 group-hover:rotate-12 transition-transform duration-300" />
-                            <span className="font-medium text-sm">Eligibility</span>
-                          </div>
-                          <span className="font-semibold text-gray-900 text-sm">
-                            {course.eligibility || '12th Pass'}
-                          </span>
-                        </div>
-                      </div>
-
-                      {/* Key Features */}
-                      <div className="mb-6">
-                        <h4 className="font-bold text-gray-900 mb-3 text-sm">Key Features:</h4>
-                        <div className="grid grid-cols-2 gap-2">
-                          <div className="flex items-center space-x-2">
-                            <CheckCircle className="h-3 w-3 text-green-500 flex-shrink-0" />
-                            <span className="text-xs text-gray-600">UGC-DEB Approved</span>
-                          </div>
-                          <div className="flex items-center space-x-2">
-                            <CheckCircle className="h-3 w-3 text-blue-500 flex-shrink-0" />
-                            <span className="text-xs text-gray-600">Online Learning</span>
-                          </div>
-                          <div className="flex items-center space-x-2">
-                            <CheckCircle className="h-3 w-3 text-purple-500 flex-shrink-0" />
-                            <span className="text-xs text-gray-600">Flexible Schedule</span>
-                          </div>
-                          <div className="flex items-center space-x-2">
-                            <CheckCircle className="h-3 w-3 text-orange-500 flex-shrink-0" />
-                            <span className="text-xs text-gray-600">Career Support</span>
-                          </div>
                         </div>
                       </div>
                       
                       {/* Action Buttons */}
-                      <div className="flex gap-4 mt-auto">
+                      <div className="flex gap-3 mt-auto">
                         <Link href={course.url} className="flex-1">
-                          <button className="w-full bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white font-semibold py-4 px-6 rounded-xl transition-all duration-300 flex items-center justify-center space-x-2 shadow-lg hover:shadow-xl transform hover:-translate-y-1 hover:scale-105 group-hover:rotate-1">
-                            <span>View Details</span>
-                            <ExternalLink className="h-5 w-5 group-hover:translate-x-1 transition-transform duration-300" />
+                          <button className="w-full bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white font-semibold py-3 px-4 rounded-xl transition-all duration-300 flex items-center justify-center space-x-2 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                            <span className="text-sm">View Details</span>
+                            <ExternalLink className="h-4 w-4" />
                           </button>
                         </Link>
-                        <button 
-                          onClick={() => handleDownloadBrochure(course.name)}
-                          className="bg-gradient-to-r from-green-600 to-emerald-700 hover:from-green-700 hover:to-emerald-800 text-white p-4 rounded-xl transition-all duration-300 transform hover:scale-110 hover:-translate-y-1 shadow-md hover:shadow-lg group"
-                          title="Download Brochure"
-                        >
-                          <Download className="h-5 w-5 group-hover:animate-bounce" />
-                        </button>
                         <Link href="/contact">
-                          <button className="bg-gradient-to-r from-teal-600 to-teal-700 hover:from-teal-700 hover:to-teal-800 text-white p-4 rounded-xl transition-all duration-300 transform hover:scale-110 hover:-translate-y-1 shadow-md hover:shadow-lg">
-                            <Phone className="h-5 w-5" />
+                          <button className="bg-gradient-to-r from-teal-600 to-teal-700 hover:from-teal-700 hover:to-teal-800 text-white p-3 rounded-xl transition-all duration-300 transform hover:scale-110">
+                            <Phone className="h-4 w-4" />
                           </button>
                         </Link>
                       </div>
@@ -445,7 +399,7 @@ For more information and admission details, contact us today!
               Why Choose Our Courses?
             </h2>
             <p className="text-base text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              Our programs are designed with industry expertise and academic excellence in mind, providing you with the skills and knowledge needed for career success.
+              Our programs provide the skills and knowledge for career success.
             </p>
           </div>
           
@@ -455,7 +409,7 @@ For more information and admission details, contact us today!
                 <Award className="h-8 w-8 text-blue-600" />
               </div>
               <h3 className="text-lg font-semibold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors duration-300">UGC Approved</h3>
-              <p className="text-gray-600 text-sm leading-relaxed">All programs are recognized and approved by UGC-DEB with full accreditation and nationwide recognition.</p>
+              <p className="text-gray-600 text-sm leading-relaxed">All programs are UGC-DEB approved and recognized nationwide.</p>
             </div>
             
             <div className="text-center group cursor-pointer p-6 rounded-2xl hover:bg-gray-50 transition-all duration-300">
@@ -463,7 +417,7 @@ For more information and admission details, contact us today!
                 <Clock className="h-8 w-8 text-cyan-600" />
               </div>
               <h3 className="text-lg font-semibold text-gray-900 mb-3 group-hover:text-cyan-600 transition-colors duration-300">Flexible Learning</h3>
-              <p className="text-gray-600 text-sm leading-relaxed">Study at your own pace with 24/7 online access, recorded lectures, and flexible examination schedules.</p>
+              <p className="text-gray-600 text-sm leading-relaxed">Study at your own pace with 24/7 online access.</p>
             </div>
             
             <div className="text-center group cursor-pointer p-6 rounded-2xl hover:bg-gray-50 transition-all duration-300">
@@ -471,7 +425,7 @@ For more information and admission details, contact us today!
                 <Users className="h-8 w-8 text-indigo-600" />
               </div>
               <h3 className="text-lg font-semibold text-gray-900 mb-3 group-hover:text-indigo-600 transition-colors duration-300">Expert Faculty</h3>
-              <p className="text-gray-600 text-sm leading-relaxed">Learn from experienced professors and industry experts with personalized guidance and mentorship.</p>
+              <p className="text-gray-600 text-sm leading-relaxed">Learn from experienced professors and industry experts.</p>
             </div>
             
             <div className="text-center group cursor-pointer p-6 rounded-2xl hover:bg-gray-50 transition-all duration-300">
@@ -479,7 +433,7 @@ For more information and admission details, contact us today!
                 <GraduationCap className="h-8 w-8 text-teal-600" />
               </div>
               <h3 className="text-lg font-semibold text-gray-900 mb-3 group-hover:text-teal-600 transition-colors duration-300">Career Support</h3>
-              <p className="text-gray-600 text-sm leading-relaxed">Comprehensive placement assistance, career guidance, and industry connections for your success.</p>
+              <p className="text-gray-600 text-sm leading-relaxed">Placement assistance and career guidance included.</p>
             </div>
           </div>
         </div>
@@ -496,8 +450,7 @@ For more information and admission details, contact us today!
             Ready to Start Your Learning Journey?
           </h2>
           <p className="text-base sm:text-lg text-blue-100 mb-6 leading-relaxed max-w-3xl mx-auto">
-            Get personalized course recommendations and expert guidance to choose 
-            the right program for your career goals. Our counselors are here to help you succeed.
+            Get personalized course recommendations and expert guidance. Our counselors are here to help.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/contact">

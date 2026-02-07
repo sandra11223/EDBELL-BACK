@@ -255,8 +255,7 @@ export default function Services() {
         <div className="relative max-w-7xl mx-auto text-center">
           <h1 className="text-4xl md:text-6xl font-bold mb-6 transform hover:scale-105 transition-transform duration-300">Our Services</h1>
           <p className="text-xl md:text-2xl text-blue-100 max-w-4xl mx-auto">
-            Comprehensive educational and career services designed to support 
-            your academic journey and professional growth.
+            Educational and career services for your success.
           </p>
         </div>
       </section>
@@ -270,7 +269,7 @@ export default function Services() {
               Additional Services
             </h2>
             <p className="text-xl text-gray-600">
-              Expanding our support to cover all aspects of your educational journey
+              More services for your educational journey
             </p>
           </div>
           
@@ -315,7 +314,7 @@ export default function Services() {
               How We Work
             </h2>
             <p className="text-xl text-gray-600">
-              Our systematic approach ensures you get the best possible outcomes
+              Our systematic approach for best outcomes
             </p>
           </div>
           
@@ -346,7 +345,7 @@ export default function Services() {
               What Our Students Say
             </h2>
             <p className="text-xl text-gray-600">
-              Success stories from students who achieved their goals with our support
+              Success stories from our students
             </p>
           </div>
           
@@ -358,7 +357,7 @@ export default function Services() {
                     <CheckCircle key={i} className="h-5 w-5 text-yellow-400" />
                   ))}
                 </div>
-                <p className="text-gray-700 mb-4">"{testimonial.content}"</p>
+                <p className="text-gray-700 mb-4">"Great career counseling and flexible MBA program."</p>
                 <div className="flex items-center space-x-3">
                   <div className="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center">
                     <Users className="h-5 w-5 text-blue-600" />
@@ -382,7 +381,7 @@ export default function Services() {
               Frequently Asked Questions
             </h2>
             <p className="text-xl text-gray-600">
-              Quick answers to common questions about our services
+              Common questions about our services
             </p>
           </div>
           
@@ -405,7 +404,7 @@ export default function Services() {
               Get in Touch
             </h2>
             <p className="text-xl text-gray-600">
-              Ready to start your journey? Contact us for personalized assistance
+              Contact us for personalized assistance
             </p>
           </div>
           
@@ -458,8 +457,7 @@ export default function Services() {
             Ready to Get Started?
           </h2>
           <p className="text-xl mb-8 text-blue-100">
-            Book a free consultation with our experts and take the first step 
-            towards achieving your educational and career goals.
+            Book a free consultation and take the first step towards your goals.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link 

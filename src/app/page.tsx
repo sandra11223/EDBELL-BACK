@@ -101,62 +101,62 @@ export default function Home() {
     {
       icon: <BookOpen className="h-8 w-8 text-indigo-600" />,
       title: "Online Degree Programs",
-      description: "UGC-approved bachelor's and master's degree programs with flexible learning schedules."
+      description: "UGC-approved degrees with flexible learning."
     },
     {
       icon: <UserCheck className="h-8 w-8 text-indigo-600" />,
       title: "Career Counseling",
-      description: "Expert guidance to help you choose the right career path and achieve your goals."
+      description: "Expert guidance for your career path."
     },
     {
       icon: <Plane className="h-8 w-8 text-indigo-600" />,
       title: "Study Abroad Services",
-      description: "Complete assistance for international education opportunities worldwide."
+      description: "International education assistance."
     },
     {
       icon: <DollarSign className="h-8 w-8 text-indigo-600" />,
       title: "Scholarship Assistance",
-      description: "Help securing financial aid and scholarships for your education journey."
+      description: "Financial aid and scholarship support."
     },
     {
       icon: <Award className="h-8 w-8 text-indigo-600" />,
       title: "Test Preparations",
-      description: "Comprehensive preparation for various competitive and entrance examinations."
+      description: "Competitive exam preparation."
     },
     {
       icon: <Shield className="h-8 w-8 text-indigo-600" />,
       title: "PSC/UPSC Coaching",
-      description: "Specialized coaching for government job examinations and civil services."
+      description: "Government job exam coaching."
     }
   ];
 
   const whyChooseUs = [
     {
       icon: <CheckCircle className="h-6 w-6 text-indigo-600" />,
-      title: "UGC Approved Programs",
-      description: "All our degree programs are UGC approved and recognized nationwide."
+      title: "UGC Approved",
+      description: "Recognized nationwide programs."
     },
     {
       icon: <Users className="h-6 w-6 text-indigo-600" />,
       title: "Expert Faculty",
-      description: "Learn from experienced professors and industry experts."
+      description: "Experienced professors."
     },
     {
       icon: <Globe className="h-6 w-6 text-indigo-600" />,
-      title: "100% Online Learning",
-      description: "Flexible online programs that fit your schedule."
+      title: "100% Online",
+      description: "Flexible learning schedule."
     },
     {
       icon: <Award className="h-6 w-6 text-indigo-600" />,
       title: "Placement Support",
-      description: "Comprehensive career guidance and placement assistance."
+      description: "Career guidance included."
     }
   ];
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-indigo-50 to-cyan-50">
       {/* Hero Section with 3D Animations */}
-      <section className="relative bg-gradient-to-br from-blue-900 via-indigo-900 to-cyan-900 min-h-[70vh] flex items-center overflow-hidden">
+      <section className="relative bg-gradient-to-br from-blue-900 via-indigo-900 to-cyan-900 min-h-[60vh] flex items-center overflow-hidden">
         {/* 3D Animated Background Elements */}
         <div className="absolute inset-0">
           <div className="absolute top-20 left-20 w-64 h-64 bg-blue-400/20 rounded-full blur-3xl animate-pulse transform-gpu"></div>
@@ -172,22 +172,21 @@ export default function Home() {
             <div className="inline-flex items-center bg-gradient-to-r from-blue-500/20 to-cyan-500/20 backdrop-blur-sm rounded-full px-6 py-3 mb-8 border border-blue-400/30 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">
               <span className="text-sm font-medium animate-pulse">🎓 Trusted by 25,000+ Students</span>
             </div>
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 leading-tight transform hover:scale-105 transition-transform duration-300">
+            <h1 className="text-3xl sm:text-4xl lg:text-6xl font-bold mb-6 leading-tight transform hover:scale-105 transition-transform duration-300">
               Guiding Students to the
               <span className="block text-transparent bg-gradient-to-r from-cyan-400 via-blue-400 to-indigo-400 bg-clip-text animate-pulse">
                 Right Education Path
               </span>
             </h1>
-            <p className="text-lg text-blue-100 mb-6 leading-relaxed transform hover:translate-x-2 transition-transform duration-300">
-              Unlock your potential with UGC-approved online degrees, expert career guidance, 
-              and comprehensive educational support services.
+            <p className="text-lg text-blue-100 mb-8 leading-relaxed transform hover:translate-x-2 transition-transform duration-300">
+              UGC-approved online degrees with expert guidance.
             </p>
-            <div className="flex flex-col sm:flex-row gap-3">
-              <Link href="/courses" className="group relative bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white px-6 py-3 rounded-xl font-semibold transition-all duration-300 transform hover:scale-105 hover:-translate-y-2 shadow-lg hover:shadow-2xl overflow-hidden">
+            <div className="flex flex-col sm:flex-row gap-4">
+              <Link href="/courses" className="group relative bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white px-8 py-4 rounded-xl font-semibold transition-all duration-300 transform hover:scale-105 hover:-translate-y-2 shadow-lg hover:shadow-2xl overflow-hidden">
                 <span className="relative z-10">Explore Courses</span>
                 <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-indigo-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </Link>
-              <Link href="/contact" className="group border-2 border-cyan-400/50 text-cyan-400 hover:bg-gradient-to-r hover:from-cyan-400 hover:to-blue-400 hover:text-white px-6 py-3 rounded-xl font-semibold transition-all duration-300 transform hover:scale-105 hover:-translate-y-2 shadow-lg hover:shadow-2xl backdrop-blur-sm">
+              <Link href="/contact" className="group border-2 border-cyan-400/50 text-cyan-400 hover:bg-gradient-to-r hover:from-cyan-400 hover:to-blue-400 hover:text-white px-8 py-4 rounded-xl font-semibold transition-all duration-300 transform hover:scale-105 hover:-translate-y-2 shadow-lg hover:shadow-2xl backdrop-blur-sm">
                 Get Free Consultation
               </Link>
             </div>
@@ -196,7 +195,7 @@ export default function Home() {
           {/* Right Content - Professional Image with 3D Effects */}
           <div className="relative transform hover:scale-105 transition-all duration-500">
             <div className="bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-lg rounded-3xl p-6 border border-white/20 shadow-2xl hover:shadow-3xl transition-all duration-500 transform hover:rotate-1">
-              <div className="w-full h-72 bg-gradient-to-br from-cyan-400 via-blue-500 to-indigo-600 rounded-2xl relative overflow-hidden shadow-2xl">
+              <div className="w-full h-80 bg-gradient-to-br from-cyan-400 via-blue-500 to-indigo-600 rounded-2xl relative overflow-hidden shadow-2xl">
                 {/* Professional Image */}
                 <img 
                   src="/hero-professional.jpg" 
@@ -247,19 +246,19 @@ export default function Home() {
       </section>
 
       {/* Stats Section with 3D Effects */}
-      <section className="py-8 bg-gradient-to-r from-blue-600 via-indigo-600 to-cyan-600 border-b border-blue-500/20 relative overflow-hidden">
+      <section className="py-4 bg-gradient-to-r from-blue-600 via-indigo-600 to-cyan-600 border-b border-blue-500/20 relative overflow-hidden">
         {/* 3D Background Pattern */}
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(255,255,255,0.1),transparent_50%)]"></div>
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_80%,rgba(255,255,255,0.1),transparent_50%)]"></div>
         
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 text-center">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 text-center items-stretch">
             <div className="flex flex-col items-center group cursor-pointer transform hover:scale-110 hover:-translate-y-2 transition-all duration-300">
-              <div className="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center mb-3 group-hover:rotate-12 group-hover:scale-110 transition-all duration-300 shadow-lg group-hover:shadow-2xl">
-                <Shield className="h-6 w-6 text-white group-hover:animate-pulse" />
+              <div className="w-10 h-10 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center mb-2 group-hover:rotate-12 group-hover:scale-110 transition-all duration-300 shadow-lg group-hover:shadow-2xl">
+                <Shield className="h-5 w-5 text-white group-hover:animate-pulse" />
               </div>
-              <div className="text-xl font-bold text-white group-hover:text-cyan-200 transition-colors duration-300">UGC Approved</div>
-              <div className="text-sm text-blue-200 group-hover:text-white transition-colors duration-300">Recognized Programs</div>
+              <div className="text-lg font-bold text-white group-hover:text-cyan-200 transition-colors duration-300">UGC Approved</div>
+              <div className="text-xs text-blue-200 group-hover:text-white transition-colors duration-300">Recognized Programs</div>
             </div>
             
             <div className="flex flex-col items-center group cursor-pointer transform hover:scale-110 hover:-translate-y-2 transition-all duration-300">
@@ -290,7 +289,7 @@ export default function Home() {
       </section>
 
       {/* Services Section with 3D Cards */}
-      <section className="py-12 bg-gradient-to-br from-blue-50 via-indigo-50 to-cyan-50 relative overflow-hidden">
+      <section className="py-8 bg-gradient-to-br from-blue-50 via-indigo-50 to-cyan-50 relative overflow-hidden">
         {/* 3D Background Elements */}
         <div className="absolute inset-0">
           <div className="absolute top-20 left-20 w-32 h-32 bg-blue-300/20 rounded-full blur-2xl animate-pulse"></div>
@@ -299,32 +298,32 @@ export default function Home() {
         </div>
         
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-10">
-            <div className="inline-flex items-center justify-center w-12 h-12 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-full mb-4 shadow-2xl transform hover:scale-110 hover:rotate-12 transition-all duration-300 animate-bounce">
-              <Zap className="h-6 w-6 text-white animate-pulse" />
+          <div className="text-center mb-6">
+            <div className="inline-flex items-center justify-center w-10 h-10 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-full mb-3 shadow-2xl transform hover:scale-110 hover:rotate-12 transition-all duration-300 animate-bounce">
+              <Zap className="h-5 w-5 text-white animate-pulse" />
             </div>
-            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3 transform hover:scale-105 transition-transform duration-300">
+            <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2 transform hover:scale-105 transition-transform duration-300">
               Our Student Support Services
             </h2>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Comprehensive educational solutions designed to support your academic journey and career goals
+            <p className="text-base text-gray-600 max-w-3xl mx-auto">
+              Educational solutions for your academic success
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {services.map((service, index) => (
-              <div key={index} className="group relative">
+              <div key={index} className="group relative h-full">
                 {/* 3D Shadow Effect */}
                 <div className="absolute inset-0 bg-gradient-to-br from-blue-600 to-cyan-600 rounded-2xl transform rotate-3 group-hover:rotate-6 transition-transform duration-300 opacity-20"></div>
                 
-                <div className="relative bg-white rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-4 hover:scale-105 border border-blue-100 group-hover:border-blue-300">
-                  <div className="w-12 h-12 bg-gradient-to-br from-blue-100 to-cyan-100 rounded-2xl flex items-center justify-center mb-4 group-hover:scale-110 group-hover:rotate-12 transition-all duration-300 shadow-lg group-hover:shadow-xl">
+                <div className="relative bg-white rounded-2xl p-4 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-4 hover:scale-105 border border-blue-100 group-hover:border-blue-300 h-full flex flex-col">
+                  <div className="w-10 h-10 bg-gradient-to-br from-blue-100 to-cyan-100 rounded-2xl flex items-center justify-center mb-3 group-hover:scale-110 group-hover:rotate-12 transition-all duration-300 shadow-lg group-hover:shadow-xl">
                     <div className="transform group-hover:animate-bounce">
                       {service.icon}
                     </div>
                   </div>
-                  <h3 className="text-lg font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors duration-300">{service.title}</h3>
-                  <p className="text-sm text-gray-600 leading-relaxed group-hover:text-gray-700 transition-colors duration-300">{service.description}</p>
+                  <h3 className="text-base font-bold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors duration-300">{service.title}</h3>
+                  <p className="text-xs text-gray-600 leading-relaxed group-hover:text-gray-700 transition-colors duration-300 flex-grow">{service.description}</p>
                   
                   {/* 3D Hover Effect */}
                   <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 to-cyan-500/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
@@ -336,35 +335,35 @@ export default function Home() {
       </section>
 
       {/* Courses Section with 3D Effects */}
-      <section className="py-12 bg-gradient-to-br from-white via-blue-50 to-indigo-50">
+      <section className="py-8 bg-gradient-to-br from-white via-blue-50 to-indigo-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-10">
-            <div className="inline-flex items-center justify-center w-12 h-12 bg-gradient-to-br from-indigo-500 to-blue-500 rounded-full mb-4 shadow-2xl transform hover:scale-110 hover:rotate-12 transition-all duration-300 animate-pulse">
-              <BookOpen className="h-6 w-6 text-white animate-bounce" />
+          <div className="text-center mb-6">
+            <div className="inline-flex items-center justify-center w-10 h-10 bg-gradient-to-br from-indigo-500 to-blue-500 rounded-full mb-3 shadow-2xl transform hover:scale-110 hover:rotate-12 transition-all duration-300 animate-pulse">
+              <BookOpen className="h-5 w-5 text-white animate-bounce" />
             </div>
-            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3 transform hover:scale-105 transition-transform duration-300">
+            <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2 transform hover:scale-105 transition-transform duration-300">
               Courses & Education Pathways
             </h2>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Choose from our comprehensive range of UGC-approved programs designed for your success
+            <p className="text-base text-gray-600 max-w-3xl mx-auto">
+              UGC-approved programs for your success
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             <div className="group relative cursor-pointer">
               {/* 3D Background Effect */}
               <div className="absolute inset-0 bg-gradient-to-br from-indigo-600 to-purple-700 rounded-2xl transform rotate-3 group-hover:rotate-6 transition-transform duration-300 opacity-90"></div>
               
-              <div className="relative bg-gradient-to-br from-indigo-600 to-purple-700 rounded-2xl p-6 text-white text-center transform hover:scale-105 hover:-translate-y-4 transition-all duration-300 shadow-xl hover:shadow-2xl">
+              <div className="relative bg-gradient-to-br from-indigo-600 to-purple-700 rounded-2xl p-4 text-white text-center transform hover:scale-105 hover:-translate-y-4 transition-all duration-300 shadow-xl hover:shadow-2xl h-full flex flex-col justify-between">
                 {/* 3D Floating Elements */}
                 <div className="absolute top-4 right-4 w-6 h-6 bg-white/20 rounded-full animate-bounce delay-100"></div>
                 <div className="absolute bottom-4 left-4 w-4 h-4 bg-purple-300/30 rounded-full animate-bounce delay-300"></div>
                 
-                <div className="transform group-hover:scale-110 group-hover:rotate-12 transition-all duration-300 mb-4">
-                  <GraduationCap className="h-12 w-12 mx-auto animate-pulse" />
+                <div className="transform group-hover:scale-110 group-hover:rotate-12 transition-all duration-300 mb-3">
+                  <GraduationCap className="h-10 w-10 mx-auto animate-pulse" />
                 </div>
-                <h3 className="text-xl font-bold mb-3 group-hover:text-cyan-200 transition-colors duration-300">Higher Secondary</h3>
-                <p className="text-sm text-indigo-100 mb-4 group-hover:text-white transition-colors duration-300">Foundation programs for academic excellence</p>
+                <h3 className="text-lg font-bold mb-2 group-hover:text-cyan-200 transition-colors duration-300">Higher Secondary</h3>
+                <p className="text-xs text-indigo-100 mb-3 group-hover:text-white transition-colors duration-300">Foundation programs</p>
                 <div className="space-y-2 text-left">
                   <div className="flex items-center space-x-2 transform group-hover:translate-x-2 transition-transform duration-300">
                     <CheckCircle className="h-4 w-4 text-green-400 animate-pulse" />
@@ -395,7 +394,7 @@ export default function Home() {
                   <BookOpen className="h-16 w-16 mx-auto animate-pulse" />
                 </div>
                 <h3 className="text-2xl font-bold mb-4 group-hover:text-cyan-200 transition-colors duration-300">Degree & PG Programs</h3>
-                <p className="text-blue-100 mb-6 group-hover:text-white transition-colors duration-300">Undergraduate and postgraduate degrees</p>
+                <p className="text-blue-100 mb-6 group-hover:text-white transition-colors duration-300">UG and PG degrees</p>
                 <div className="space-y-2 text-left">
                   <div className="flex items-center space-x-2 transform group-hover:translate-x-2 transition-transform duration-300">
                     <CheckCircle className="h-4 w-4 text-green-400 animate-pulse" />
@@ -426,7 +425,7 @@ export default function Home() {
                   <Award className="h-16 w-16 mx-auto animate-pulse" />
                 </div>
                 <h3 className="text-2xl font-bold mb-4 group-hover:text-green-200 transition-colors duration-300">Skill & Counseling</h3>
-                <p className="text-teal-100 mb-6 group-hover:text-white transition-colors duration-300">Career guidance and skill development</p>
+                <p className="text-teal-100 mb-6 group-hover:text-white transition-colors duration-300">Career guidance & skills</p>
                 <div className="space-y-2 text-left">
                   <div className="flex items-center space-x-2 transform group-hover:translate-x-2 transition-transform duration-300">
                     <CheckCircle className="h-4 w-4 text-green-400 animate-pulse" />
@@ -448,7 +447,7 @@ export default function Home() {
       </section>
 
       {/* Testimonials */}
-      <section className="py-12 bg-gray-50">
+      <section className="py-8 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             <div className="bg-white rounded-2xl p-8 shadow-lg">
@@ -462,7 +461,7 @@ export default function Home() {
                 </div>
               </div>
               <p className="text-gray-700 leading-relaxed">
-                "The career counseling service helped me identify my true passion and guided me towards the right career path. The online MBA program was flexible and comprehensive."
+                "Great career counseling and flexible MBA program."
               </p>
             </div>
 
@@ -477,7 +476,7 @@ export default function Home() {
                 </div>
               </div>
               <p className="text-gray-700 leading-relaxed">
-                "Thanks to their study abroad services, I'm now pursuing my Master's in Canada. The visa process was smooth and hassle-free with their expert guidance."
+                "Excellent study abroad support. Now in Canada!"
               </p>
             </div>
           </div>
@@ -485,7 +484,7 @@ export default function Home() {
       </section>
 
       {/* Why Choose Us */}
-      <section className="py-12 bg-white">
+      <section className="py-8 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
@@ -493,7 +492,7 @@ export default function Home() {
                 Why Choose Edbell
               </h2>
               <p className="text-xl text-gray-600 mb-8">
-                We provide comprehensive educational solutions with expert guidance and unwavering support to help you achieve your academic and career goals.
+                Expert guidance for your academic and career goals.
               </p>
               
               <div className="space-y-6">

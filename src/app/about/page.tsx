@@ -6,25 +6,25 @@ export default function About() {
     {
       icon: <Target className="h-8 w-8 text-white" />,
       title: "Excellence",
-      description: "Committed to providing the highest quality education and services",
+      description: "Highest quality education and services",
       gradient: "bg-gradient-to-br from-blue-500 to-blue-600"
     },
     {
       icon: <Users className="h-8 w-8 text-white" />,
       title: "Student-Centric",
-      description: "Every decision we make is focused on student success and satisfaction",
+      description: "Focused on student success",
       gradient: "bg-gradient-to-br from-cyan-500 to-cyan-600"
     },
     {
       icon: <CheckCircle className="h-8 w-8 text-white" />,
       title: "Integrity",
-      description: "Maintaining ethical practices and transparency in all our operations",
+      description: "Ethical practices and transparency",
       gradient: "bg-gradient-to-br from-indigo-500 to-indigo-600"
     },
     {
       icon: <Award className="h-8 w-8 text-white" />,
       title: "Innovation",
-      description: "Continuously evolving our methods to provide better learning experiences",
+      description: "Better learning experiences",
       gradient: "bg-gradient-to-br from-teal-500 to-teal-600"
     }
   ];
@@ -112,7 +112,7 @@ export default function About() {
               </h1>
               
               <p className="text-2xl text-blue-100 leading-relaxed max-w-2xl mx-auto">
-                EDBELL EDUSOLUTIONS LLP - Your trusted partner in quality education and career success
+                Your trusted partner in quality education
               </p>
 
               <div className="grid grid-cols-2 gap-4 max-w-md mx-auto pt-8">
@@ -159,17 +159,17 @@ export default function About() {
             <div className="bg-gradient-to-br from-blue-500/20 to-cyan-500/20 backdrop-blur-lg rounded-2xl p-6 border border-blue-400/30 text-center transform hover:scale-105 transition-all duration-300">
               <Shield className="h-12 w-12 text-cyan-300 mx-auto mb-4" />
               <h3 className="text-white font-bold text-xl mb-2">UGC Approved</h3>
-              <p className="text-blue-200">All programs are UGC-DEB approved and recognized nationwide</p>
+              <p className="text-blue-200">All programs are UGC-DEB approved</p>
             </div>
             <div className="bg-gradient-to-br from-cyan-500/20 to-indigo-500/20 backdrop-blur-lg rounded-2xl p-6 border border-cyan-400/30 text-center transform hover:scale-105 transition-all duration-300">
               <Target className="h-12 w-12 text-cyan-300 mx-auto mb-4" />
               <h3 className="text-white font-bold text-xl mb-2">Career Focused</h3>
-              <p className="text-cyan-200">Comprehensive career guidance and placement support</p>
+              <p className="text-cyan-200">Career guidance and placement support</p>
             </div>
             <div className="bg-gradient-to-br from-indigo-500/20 to-blue-500/20 backdrop-blur-lg rounded-2xl p-6 border border-indigo-400/30 text-center transform hover:scale-105 transition-all duration-300">
               <Zap className="h-12 w-12 text-blue-300 mx-auto mb-4" />
               <h3 className="text-white font-bold text-xl mb-2">Fast Track</h3>
-              <p className="text-indigo-200">Flexible online programs that fit your schedule</p>
+              <p className="text-indigo-200">Flexible online programs</p>
             </div>
           </div>
         </div>
@@ -187,7 +187,7 @@ export default function About() {
                 The <span className="text-transparent bg-gradient-to-r from-blue-500 to-blue-600 bg-clip-text">EDBELL</span> Story
               </h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                A journey of passion, dedication, and unwavering commitment to educational excellence
+                Our journey of commitment to educational excellence
               </p>
             </div>
             
@@ -278,9 +278,7 @@ export default function About() {
                 <h3 className="text-2xl font-bold text-gray-900">Our Mission</h3>
               </div>
               <p className="text-gray-700 leading-relaxed">
-                To enable students to achieve their dreams while promoting ethical and 
-                social development through quality education, comprehensive support services, 
-                and innovative learning solutions that prepare them for global opportunities.
+                To enable students to achieve their dreams through quality education and innovative learning solutions.
               </p>
             </div>
             
@@ -292,9 +290,7 @@ export default function About() {
                 <h3 className="text-2xl font-bold text-gray-900">Our Vision</h3>
               </div>
               <p className="text-gray-700 leading-relaxed">
-                To become the leading provider of accessible, high-quality online education 
-                in India, creating a generation of skilled professionals and academicians 
-                who contribute positively to society and the global economy.
+                To become the leading provider of accessible, high-quality online education in India.
               </p>
             </div>
           </div>
@@ -310,8 +306,7 @@ export default function About() {
             </div>
             <h2 className="text-4xl sm:text-5xl font-black text-gray-900 mb-6">Our Core Values</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              These fundamental principles guide everything we do and shape our commitment 
-              to student success and educational excellence.
+              Principles that guide our commitment to student success
             </p>
           </div>
           
@@ -346,7 +341,7 @@ export default function About() {
               </div>
               <h3 className="heading-4 text-gray-900 mb-4">Online Degree Programs</h3>
               <p className="body text-gray-600 mb-4">
-                100% online BA, B.Com, BBA, MA, M.Com, and MBA programs from UGC-DEB approved universities
+                UGC-DEB approved online degree programs
               </p>
               <ul className="body-small text-gray-600 space-y-2">
                 <li className="flex items-center space-x-2">
@@ -370,7 +365,7 @@ export default function About() {
               </div>
               <h3 className="heading-4 text-gray-900 mb-4">Specialized Courses</h3>
               <p className="body text-gray-600 mb-4">
-                Professional certification programs in high-demand fields
+                Professional certification programs
               </p>
               <ul className="body-small text-gray-600 space-y-2">
                 <li className="flex items-center space-x-2">
@@ -398,7 +393,7 @@ export default function About() {
               </div>
               <h3 className="heading-4 text-gray-900 mb-4">Support Services</h3>
               <p className="body text-gray-600 mb-4">
-                Comprehensive guidance and assistance throughout your educational journey
+                Guidance throughout your educational journey
               </p>
               <ul className="body-small text-gray-600 space-y-2">
                 <li className="flex items-center space-x-2">

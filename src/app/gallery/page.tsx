@@ -128,19 +128,6 @@ export default function Gallery() {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      {/* Breadcrumb */}
-      <div className="bg-white border-b border-gray-100">
-        <div className="mobile-container py-3 sm:py-4">
-          <nav className="flex items-center space-x-2 text-sm">
-            <Link href="/" className="text-gray-500 hover:text-blue-600 transition-colors mobile-touch-target">
-              Home
-            </Link>
-            <span className="text-gray-400">/</span>
-            <span className="text-gray-900 font-medium">Gallery</span>
-          </nav>
-        </div>
-      </div>
-
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-gradient-to-br from-blue-800 via-blue-900 to-blue-700">
         {/* 3D Animated Background Elements */}

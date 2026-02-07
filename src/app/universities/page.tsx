@@ -72,7 +72,7 @@ export default function Universities() {
       established: '1922',
       location: 'New Delhi',
       website: 'du.ac.in',
-      description: 'One of India\'s premier universities offering comprehensive online degree programs with excellent faculty and modern infrastructure.',
+      description: 'One of India\'s premier universities offering online degree programs.',
       ranking: '#2 in India',
       studentsCount: '50,000+',
       coursesOffered: 45,
@@ -87,7 +87,7 @@ export default function Universities() {
       established: '1995',
       location: 'Mumbai',
       website: 'ignou.ac.in',
-      description: 'Leading technical university specializing in engineering, computer science, and emerging technologies with industry partnerships.',
+      description: 'Leading technical university specializing in engineering and technology.',
       ranking: '#5 in Technology',
       studentsCount: '25,000+',
       coursesOffered: 32,
@@ -102,7 +102,7 @@ export default function Universities() {
       established: '1987',
       location: 'Bangalore',
       website: 'lpu.in',
-      description: 'Premier business school offering world-class MBA and management programs with global industry connections.',
+      description: 'Premier business school offering world-class MBA programs.',
       ranking: '#3 in Management',
       studentsCount: '15,000+',
       coursesOffered: 28,
@@ -117,7 +117,7 @@ export default function Universities() {
       established: '2001',
       location: 'Chennai',
       website: 'jaipur.manipal.edu',
-      description: 'Innovative liberal arts university focusing on interdisciplinary education and creative thinking.',
+      description: 'Innovative liberal arts university focusing on interdisciplinary education.',
       ranking: '#1 in Liberal Arts',
       studentsCount: '12,000+',
       coursesOffered: 35,
@@ -132,7 +132,7 @@ export default function Universities() {
       established: '1978',
       location: 'Pune',
       website: 'cuchd.in',
-      description: 'Research-focused university with cutting-edge laboratories and innovative science programs.',
+      description: 'Research-focused university with innovative science programs.',
       ranking: '#4 in Science',
       studentsCount: '30,000+',
       coursesOffered: 42,
@@ -147,7 +147,7 @@ export default function Universities() {
       established: '1992',
       location: 'Kolkata',
       website: 'amity.edu',
-      description: 'International commerce university with strong industry ties and practical learning approach.',
+      description: 'International commerce university with strong industry ties.',
       ranking: '#6 in Commerce',
       studentsCount: '20,000+',
       coursesOffered: 25,
@@ -179,7 +179,7 @@ export default function Universities() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-cyan-50">
       {/* Hero Section - Completely Different Design */}
-      <section className="relative py-10 sm:py-12 lg:py-16 overflow-hidden">
+      <section className="relative py-6 sm:py-8 lg:py-10 overflow-hidden">
         {/* Animated Background */}
         <div className="absolute inset-0">
           <div className="absolute inset-0 bg-gradient-to-br from-blue-600/10 via-cyan-600/5 to-indigo-600/10"></div>
@@ -199,7 +199,7 @@ export default function Universities() {
                 <span className="text-sm font-semibold text-blue-800">🏛️ PREMIER UNIVERSITY PARTNERS</span>
               </div>
               
-              <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold mb-6 leading-tight">
+              <h1 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold mb-4 leading-tight">
                 <span className="text-gray-900">Choose Your</span>
                 <br />
                 <span className="text-transparent bg-gradient-to-r from-blue-600 via-cyan-600 to-indigo-600 bg-clip-text">
@@ -207,9 +207,8 @@ export default function Universities() {
                 </span>
               </h1>
               
-              <p className="text-lg sm:text-xl text-gray-600 mb-8 leading-relaxed max-w-2xl mx-auto lg:mx-0">
-                Partner with India's top-ranked universities offering world-class online education, 
-                cutting-edge research, and exceptional career opportunities.
+              <p className="text-base sm:text-lg text-gray-600 mb-6 leading-relaxed max-w-2xl mx-auto lg:mx-0">
+                Partner with India's top universities offering world-class online education.
               </p>
 
               {/* Stats Cards */}
@@ -318,7 +317,7 @@ export default function Universities() {
       </section>
 
       {/* Search and Filter Section */}
-      <section className="py-8 sm:py-10 bg-white/50 backdrop-blur-sm border-y border-gray-200/50" id="universities">
+      <section className="py-6 sm:py-8 bg-white/50 backdrop-blur-sm border-y border-gray-200/50" id="universities">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8">
             <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">Find Your Perfect University Match</h2>
@@ -366,7 +365,7 @@ export default function Universities() {
       </section>
 
       {/* Universities Grid - Unique Card Design */}
-      <section className="py-10 sm:py-12">
+      <section className="py-6 sm:py-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {filteredUniversities.length === 0 ? (
             <div className="text-center py-16">
@@ -375,8 +374,8 @@ export default function Universities() {
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">No Universities Found</h3>
               <p className="text-lg text-gray-600 mb-8 max-w-xl mx-auto">
-                {searchTerm ? `No universities match your search "${searchTerm}". Try different keywords or filters.` : 
-                'No universities match the selected filter. Try selecting a different category.'}
+                {searchTerm ? `No universities match "${searchTerm}". Try different keywords.` : 
+                'No universities match the filter. Try a different category.'}
               </p>
               <button 
                 onClick={() => {setSearchTerm(''); setSelectedFilter('all');}}
@@ -387,21 +386,21 @@ export default function Universities() {
             </div>
           ) : (
             <>
-              <div className="text-center mb-8">
-                <h2 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-3">
+              <div className="text-center mb-6">
+                <h2 className="text-xl lg:text-2xl font-bold text-gray-900 mb-2">
                   Our Partner Universities
                 </h2>
                 <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-                  Showing {filteredUniversities.length} universities that match your criteria. Each institution offers world-class education with modern facilities and expert faculty.
+                  Showing {filteredUniversities.length} universities. Each offers world-class education.
                 </p>
               </div>
 
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-6">
+              <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 lg:gap-6">
                 {filteredUniversities.map((university) => (
-                  <div key={university._id || university.name} className="group">
-                    <div className="bg-white/80 backdrop-blur-sm rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden border border-gray-100/50 transform hover:scale-105 hover:-translate-y-2 cursor-pointer">
+                  <div key={university._id || university.name} className="group h-full">
+                    <div className="bg-white/80 backdrop-blur-sm rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden border border-gray-100/50 transform hover:scale-105 hover:-translate-y-2 cursor-pointer h-full flex flex-col">
                       {/* Header with Gradient */}
-                      <div className="bg-gradient-to-r from-blue-600 via-cyan-600 to-indigo-600 p-6 relative overflow-hidden">
+                      <div className="bg-gradient-to-r from-blue-600 via-cyan-600 to-indigo-600 p-4 relative overflow-hidden">
                         <div className="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -translate-y-16 translate-x-16 group-hover:scale-150 transition-transform duration-500"></div>
                         <div className="relative flex items-start justify-between">
                           <div className="flex-1">
@@ -416,7 +415,7 @@ export default function Universities() {
                                 <div className="text-white/80 text-sm mt-1">Est. {university.established}</div>
                               </div>
                             </div>
-                            <h3 className="text-xl font-bold text-white mb-2 group-hover:scale-105 transition-transform duration-300">{university.name}</h3>
+                            <h3 className="text-lg font-bold text-white mb-1 group-hover:scale-105 transition-transform duration-300">{university.name}</h3>
                             <div className="flex items-center text-white/90 text-sm">
                               <MapPin className="h-4 w-4 mr-2" />
                               <span>{university.location}</span>
@@ -437,91 +436,40 @@ export default function Universities() {
                       </div>
 
                       {/* Content */}
-                      <div className="p-6">
-                        <p className="text-gray-600 mb-4 leading-relaxed text-sm">{university.description}</p>
+                      <div className="p-4 flex-grow flex flex-col">
                         
-                        {/* Stats Grid */}
-                        <div className="grid grid-cols-3 gap-3 mb-4">
-                          <div className="text-center p-4 bg-blue-50 rounded-xl group-hover:bg-blue-100 transition-colors duration-300">
-                            <Users className="h-6 w-6 text-blue-600 mx-auto mb-2" />
-                            <div className="text-lg font-bold text-gray-900">{university.studentsCount}</div>
+                        {/* Stats Grid - Simplified */}
+                        <div className="grid grid-cols-3 gap-2 mb-4">
+                          <div className="text-center p-3 bg-blue-50 rounded-xl">
+                            <Users className="h-5 w-5 text-blue-600 mx-auto mb-1" />
+                            <div className="text-sm font-bold text-gray-900">{university.studentsCount}</div>
                             <div className="text-xs text-gray-600">Students</div>
                           </div>
-                          <div className="text-center p-4 bg-cyan-50 rounded-xl group-hover:bg-cyan-100 transition-colors duration-300">
-                            <BookOpen className="h-6 w-6 text-cyan-600 mx-auto mb-2" />
-                            <div className="text-lg font-bold text-gray-900">{university.coursesOffered}+</div>
+                          <div className="text-center p-3 bg-cyan-50 rounded-xl">
+                            <BookOpen className="h-5 w-5 text-cyan-600 mx-auto mb-1" />
+                            <div className="text-sm font-bold text-gray-900">{university.coursesOffered}+</div>
                             <div className="text-xs text-gray-600">Courses</div>
                           </div>
-                          <div className="text-center p-4 bg-indigo-50 rounded-xl group-hover:bg-indigo-100 transition-colors duration-300">
-                            <Award className="h-6 w-6 text-indigo-600 mx-auto mb-2" />
-                            <div className="text-lg font-bold text-gray-900">UGC</div>
+                          <div className="text-center p-3 bg-indigo-50 rounded-xl">
+                            <Award className="h-5 w-5 text-indigo-600 mx-auto mb-1" />
+                            <div className="text-sm font-bold text-gray-900">UGC</div>
                             <div className="text-xs text-gray-600">Approved</div>
-                          </div>
-                        </div>
-
-                        {/* Specializations */}
-                        {university.specialization && (
-                          <div className="mb-6">
-                            <h4 className="font-semibold text-gray-900 mb-3 flex items-center">
-                              <Target className="h-4 w-4 mr-2 text-blue-600" />
-                              Specializations:
-                            </h4>
-                            <div className="flex flex-wrap gap-2">
-                              {university.specialization.map((spec, index) => (
-                                <span key={index} className="bg-gradient-to-r from-blue-100 to-cyan-100 text-blue-800 text-sm px-3 py-1 rounded-full font-medium">
-                                  {spec}
-                                </span>
-                              ))}
-                            </div>
-                          </div>
-                        )}
-
-                        {/* Key Features */}
-                        <div className="mb-8">
-                          <h4 className="font-semibold text-gray-900 mb-4 flex items-center">
-                            <Shield className="h-4 w-4 mr-2 text-green-600" />
-                            Key Features:
-                          </h4>
-                          <div className="grid grid-cols-2 gap-3">
-                            <div className="flex items-center space-x-2">
-                              <CheckCircle className="h-4 w-4 text-green-500 flex-shrink-0" />
-                              <span className="text-sm text-gray-600">UGC Approved</span>
-                            </div>
-                            <div className="flex items-center space-x-2">
-                              <CheckCircle className="h-4 w-4 text-blue-500 flex-shrink-0" />
-                              <span className="text-sm text-gray-600">Online Programs</span>
-                            </div>
-                            <div className="flex items-center space-x-2">
-                              <CheckCircle className="h-4 w-4 text-blue-500 flex-shrink-0" />
-                              <span className="text-sm text-gray-600">Expert Faculty</span>
-                            </div>
-                            <div className="flex items-center space-x-2">
-                              <CheckCircle className="h-4 w-4 text-orange-500 flex-shrink-0" />
-                              <span className="text-sm text-gray-600">Career Support</span>
-                            </div>
                           </div>
                         </div>
                         
                         {/* Action Buttons */}
-                        <div className="flex gap-4">
+                        <div className="flex gap-3 mt-auto pt-4">
                           <Link href={`/universities/${getUniversitySlug(university.name)}`} className="flex-1">
-                            <button className="w-full bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white font-semibold py-4 px-6 rounded-xl transition-all duration-300 flex items-center justify-center space-x-2 shadow-lg hover:shadow-xl transform hover:-translate-y-1 hover:scale-105 group-hover:rotate-1">
-                              <span>View Details</span>
-                              <ExternalLink className="h-5 w-5 group-hover:translate-x-1 transition-transform duration-300" />
+                            <button className="w-full bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white font-semibold py-3 px-4 rounded-xl transition-all duration-300 flex items-center justify-center space-x-2 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                              <span className="text-sm">View Details</span>
+                              <ExternalLink className="h-4 w-4" />
                             </button>
                           </Link>
                           <Link href="/contact">
-                            <button className="bg-white border-2 border-gray-200 hover:border-blue-300 text-gray-700 hover:text-blue-600 font-semibold py-4 px-6 rounded-xl transition-all duration-300 transform hover:scale-110 hover:-translate-y-1 shadow-lg hover:shadow-xl">
-                              <Phone className="h-5 w-5" />
+                            <button className="bg-white border-2 border-gray-200 hover:border-blue-300 text-gray-700 hover:text-blue-600 font-semibold py-3 px-4 rounded-xl transition-all duration-300 transform hover:scale-110">
+                              <Phone className="h-4 w-4" />
                             </button>
                           </Link>
-                          {university.website && (
-                            <a href={`https://${university.website}`} target="_blank" rel="noopener noreferrer" title={`Visit ${university.name} Website`}>
-                              <button className="bg-gradient-to-r from-teal-600 to-teal-700 hover:from-teal-700 hover:to-teal-800 text-white font-semibold py-4 px-6 rounded-xl transition-all duration-300 transform hover:scale-110 hover:-translate-y-1 shadow-lg hover:shadow-xl">
-                                <Globe className="h-5 w-5" />
-                              </button>
-                            </a>
-                          )}
                         </div>
                       </div>
                     </div>
@@ -554,20 +502,19 @@ export default function Universities() {
           </h2>
           
           <p className="text-lg sm:text-xl text-blue-100 mb-8 leading-relaxed max-w-3xl mx-auto">
-            Get personalized university recommendations based on your academic background, career goals, and preferences. 
-            Our expert counselors will guide you through the entire admission process.
+            Get personalized university recommendations. Our counselors will guide you through the admission process.
           </p>
           
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8 max-w-3xl mx-auto">
             <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 transform hover:scale-105 hover:-translate-y-1 transition-all duration-300 cursor-pointer shadow-lg hover:shadow-xl">
               <Phone className="h-6 w-6 text-yellow-400 mx-auto mb-3" />
               <h3 className="font-semibold text-base mb-2">Free Consultation</h3>
-              <p className="text-blue-100 text-sm">Expert guidance for university selection</p>
+              <p className="text-blue-100 text-sm">Expert guidance</p>
             </div>
             <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 transform hover:scale-105 hover:-translate-y-1 transition-all duration-300 cursor-pointer shadow-lg hover:shadow-xl">
               <Target className="h-6 w-6 text-green-400 mx-auto mb-3" />
               <h3 className="font-semibold text-base mb-2">Perfect Match</h3>
-              <p className="text-blue-100 text-sm">Find universities that fit your goals</p>
+              <p className="text-blue-100 text-sm">Universities that fit your goals</p>
             </div>
             <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 transform hover:scale-105 hover:-translate-y-1 transition-all duration-300 cursor-pointer shadow-lg hover:shadow-xl">
               <Shield className="h-6 w-6 text-blue-400 mx-auto mb-3" />

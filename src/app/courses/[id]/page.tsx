@@ -172,7 +172,7 @@ export default async function CoursePage({ params }: CoursePageProps) {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-10 px-4 sm:px-6 lg:px-8">
+      <section className="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-6 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -182,29 +182,29 @@ export default async function CoursePage({ params }: CoursePageProps) {
                   Back to Courses
                 </Link>
               </div>
-              <h1 className="text-3xl md:text-4xl font-bold mb-3">{course.title}</h1>
-              <p className="text-lg text-blue-100 mb-4">{course.description}</p>
+              <h1 className="text-2xl md:text-3xl font-bold mb-2">{course.title}</h1>
+              <p className="text-base text-blue-100 mb-3">{course.description}</p>
               
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-6">
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-2 mb-4">
                 <div className="text-center">
-                  <Clock className="h-5 w-5 mx-auto mb-1" />
+                  <Clock className="h-4 w-4 mx-auto mb-1" />
                   <div className="text-xs text-blue-200">Duration</div>
-                  <div className="text-sm font-semibold">{course.duration}</div>
+                  <div className="text-xs font-semibold">{course.duration}</div>
                 </div>
                 <div className="text-center">
-                  <BookOpen className="h-5 w-5 mx-auto mb-1" />
+                  <BookOpen className="h-4 w-4 mx-auto mb-1" />
                   <div className="text-xs text-blue-200">Mode</div>
-                  <div className="text-sm font-semibold">{course.mode}</div>
+                  <div className="text-xs font-semibold">{course.mode}</div>
                 </div>
                 <div className="text-center">
-                  <Users className="h-5 w-5 mx-auto mb-1" />
+                  <Users className="h-4 w-4 mx-auto mb-1" />
                   <div className="text-xs text-blue-200">Students</div>
-                  <div className="text-sm font-semibold">{course.studentsEnrolled}+</div>
+                  <div className="text-xs font-semibold">{course.studentsEnrolled}+</div>
                 </div>
                 <div className="text-center">
-                  <Star className="h-5 w-5 mx-auto mb-1" />
+                  <Star className="h-4 w-4 mx-auto mb-1" />
                   <div className="text-xs text-blue-200">Rating</div>
-                  <div className="text-sm font-semibold">{course.rating}/5</div>
+                  <div className="text-xs font-semibold">{course.rating}/5</div>
                 </div>
               </div>
 
@@ -219,25 +219,25 @@ export default async function CoursePage({ params }: CoursePageProps) {
               </div>
             </div>
 
-            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
-              <h3 className="text-xl font-bold mb-4">Course Highlights</h3>
-              <div className="space-y-3">
+            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-4 border border-white/20">
+              <h3 className="text-lg font-bold mb-3">Course Highlights</h3>
+              <div className="space-y-2">
                 {course.features.map((feature, index) => (
                   <div key={index} className="flex items-center space-x-2">
-                    <CheckCircle className="h-4 w-4 text-green-400 flex-shrink-0" />
-                    <span className="text-sm">{feature}</span>
+                    <CheckCircle className="h-3 w-3 text-green-400 flex-shrink-0" />
+                    <span className="text-xs">{feature}</span>
                   </div>
                 ))}
               </div>
-              <div className="mt-4 pt-4 border-t border-white/20">
+              <div className="mt-3 pt-3 border-t border-white/20">
                 <div className="flex items-center justify-between">
                   <div>
                     <div className="text-xs text-blue-200">Course Fee</div>
-                    <div className="text-lg font-bold">{course.fee}</div>
+                    <div className="text-base font-bold">{course.fee}</div>
                   </div>
                   <div className="text-right">
                     <div className="text-xs text-blue-200">Placement Rate</div>
-                    <div className="text-lg font-bold">{course.placementRate}</div>
+                    <div className="text-base font-bold">{course.placementRate}</div>
                   </div>
                 </div>
               </div>
@@ -247,25 +247,25 @@ export default async function CoursePage({ params }: CoursePageProps) {
       </section>
 
       {/* Course Details */}
-      <section className="py-10 px-4 sm:px-6 lg:px-8">
+      <section className="py-6 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
             <div className="lg:col-span-2">
               {/* About Course */}
-              <div className="mb-8">
-                <h2 className="text-2xl font-bold text-gray-900 mb-4">About This Course</h2>
-                <p className="text-base text-gray-700 mb-4">{course.detailedDescription}</p>
+              <div className="mb-6">
+                <h2 className="text-xl font-bold text-gray-900 mb-3">About This Course</h2>
+                <p className="text-sm text-gray-700 mb-3">{course.detailedDescription}</p>
                 
-                <div className="bg-blue-50 p-4 rounded-lg">
-                  <h3 className="text-lg font-semibold text-gray-900 mb-3">Eligibility Criteria</h3>
-                  <p className="text-sm text-gray-700">{course.eligibility}</p>
+                <div className="bg-blue-50 p-3 rounded-lg">
+                  <h3 className="text-base font-semibold text-gray-900 mb-2">Eligibility Criteria</h3>
+                  <p className="text-xs text-gray-700">{course.eligibility}</p>
                 </div>
               </div>
 
               {/* Curriculum */}
-              <div className="mb-8">
-                <h2 className="text-2xl font-bold text-gray-900 mb-4">Curriculum</h2>
-                <div className="space-y-4">
+              <div className="mb-6">
+                <h2 className="text-xl font-bold text-gray-900 mb-3">Curriculum</h2>
+                <div className="space-y-3">
                   {course.curriculum.map((year, index) => (
                     <div key={index} className="bg-white border border-gray-200 rounded-lg p-4">
                       <h3 className="text-lg font-semibold text-gray-900 mb-3">{year.year}</h3>
@@ -283,31 +283,31 @@ export default async function CoursePage({ params }: CoursePageProps) {
               </div>
 
               {/* Specializations */}
-              <div className="mb-8">
-                <h2 className="text-2xl font-bold text-gray-900 mb-4">Specializations</h2>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div className="mb-6">
+                <h2 className="text-xl font-bold text-gray-900 mb-3">Specializations</h2>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                   {course.specializations.map((spec, index) => (
-                    <div key={index} className="bg-white border border-gray-200 rounded-lg p-4">
-                      <h3 className="text-base font-semibold text-gray-900 mb-2">{spec.name}</h3>
-                      <p className="text-sm text-gray-600">{spec.description}</p>
+                    <div key={index} className="bg-white border border-gray-200 rounded-lg p-3">
+                      <h3 className="text-sm font-semibold text-gray-900 mb-1">{spec.name}</h3>
+                      <p className="text-xs text-gray-600">{spec.description}</p>
                     </div>
                   ))}
                 </div>
               </div>
 
               {/* Career Opportunities */}
-              <div className="mb-8">
-                <h2 className="text-2xl font-bold text-gray-900 mb-4">Career Opportunities</h2>
-                <div className="space-y-4">
+              <div className="mb-6">
+                <h2 className="text-xl font-bold text-gray-900 mb-3">Career Opportunities</h2>
+                <div className="space-y-3">
                   {course.careerOptions.map((career, index) => (
-                    <div key={index} className="bg-white border border-gray-200 rounded-lg p-4">
-                      <div className="flex items-start justify-between mb-2">
-                        <h3 className="text-base font-semibold text-gray-900">{career.title}</h3>
-                        <span className="bg-green-100 text-green-800 text-xs font-semibold px-2 py-1 rounded-full">
+                    <div key={index} className="bg-white border border-gray-200 rounded-lg p-3">
+                      <div className="flex items-start justify-between mb-1">
+                        <h3 className="text-sm font-semibold text-gray-900">{career.title}</h3>
+                        <span className="bg-green-100 text-green-800 text-xs font-semibold px-2 py-0.5 rounded-full">
                           {career.salary}
                         </span>
                       </div>
-                      <p className="text-sm text-gray-600">{career.description}</p>
+                      <p className="text-xs text-gray-600">{career.description}</p>
                     </div>
                   ))}
                 </div>
@@ -315,11 +315,11 @@ export default async function CoursePage({ params }: CoursePageProps) {
             </div>
 
             {/* Sidebar */}
-            <div className="space-y-6">
+            <div className="space-y-4">
               {/* Quick Info */}
-              <div className="bg-white border border-gray-200 rounded-lg p-4">
-                <h3 className="text-lg font-semibold text-gray-900 mb-3">Quick Information</h3>
-                <div className="space-y-3">
+              <div className="bg-white border border-gray-200 rounded-lg p-3">
+                <h3 className="text-base font-semibold text-gray-900 mb-2">Quick Information</h3>
+                <div className="space-y-2">
                   <div className="flex items-center justify-between">
                     <span className="text-sm text-gray-600">Duration</span>
                     <span className="text-sm font-semibold">{course.duration}</span>
